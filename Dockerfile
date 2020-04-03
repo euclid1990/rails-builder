@@ -41,4 +41,4 @@ RUN bundle config --global frozen 1 && \
     bundle install -j4 --retry 3
 
 # ONBUILD: Add triggers to the image, executed later while building a child image
-ONBUILD ENV RAILS_MASTER_KEY=${RAILS_MASTER_KEY} RAILS_ENV=${RAILS_ENV} NODE_ENV=${NODE_ENV}
+ONBUILD RUN echo "Do anything here !"
