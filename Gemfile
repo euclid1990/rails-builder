@@ -5,7 +5,9 @@ ruby "2.6.5"
 
 gem "active_model_serializers"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "browser"
 gem "composite_primary_keys"
+gem "colorize"
 gem "config"
 gem "date_validator"
 gem "devise"
@@ -20,6 +22,7 @@ gem "paranoia"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.2", ">= 6.0.2.1"
 gem "sass-rails", ">= 6"
+gem "slim-rails"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "webpacker", "~> 4.0"
 
@@ -40,7 +43,7 @@ group :test do
   gem "brakeman"
   gem "bundler-audit"
   gem "rails-controller-testing"
-  gem "rspec-rails"
+  gem "rspec-rails", "4.0.0.beta3"
   gem "rubocop"
   gem "rubocop-checkstyle_formatter"
   gem "rubocop-performance", require: false

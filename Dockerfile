@@ -19,7 +19,7 @@ ENV BUNDLE_APP_CONFIG=${APP_PATH}/.bundle
 WORKDIR ${APP_PATH}
 
 # Install packages
-RUN apk add --update --no-cache build-base git tzdata curl-dev mysql-dev yaml-dev zlib-dev sqlite-dev nodejs~=${BUILD_NODE_VERSION} yarn && \
+RUN apk add --update --no-cache build-base git tzdata python curl-dev mysql-dev yaml-dev zlib-dev sqlite-dev nodejs~=${BUILD_NODE_VERSION} yarn && \
     rm -rf /var/cache/apk/*
 
 # Install bundler
