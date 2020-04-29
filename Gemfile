@@ -14,13 +14,17 @@ gem "devise"
 gem "doorkeeper"
 gem "dotenv-rails"
 gem "draper"
+gem "google-cloud-datastore"
 gem "hashids"
 gem "jbuilder", "~> 2.7"
 gem "mysql2"
+gem "faraday"
 gem "pagy"
 gem "paranoia"
 gem "puma", "~> 4.1"
+gem "rack-cors"
 gem "rails", "~> 6.0.2", ">= 6.0.2.1"
+gem "redis"
 gem "sass-rails", ">= 6"
 gem "slim-rails"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -33,6 +37,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "bullet"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
@@ -42,6 +47,7 @@ end
 group :test do
   gem "brakeman"
   gem "bundler-audit"
+  gem "fakeredis"
   gem "rails-controller-testing"
   gem "rspec-rails", "4.0.0.beta3"
   gem "rubocop"
