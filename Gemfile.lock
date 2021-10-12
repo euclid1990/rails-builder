@@ -232,7 +232,7 @@ GEM
     multi_json (1.14.1)
     multipart-post (2.1.1)
     mysql2 (0.5.3)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
@@ -249,7 +249,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.4)
-    puma (4.3.3)
+    puma (4.3.9)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-cors (1.1.1)
@@ -429,7 +429,7 @@ DEPENDENCIES
   pagy
   paranoia
   pry-rails
-  puma (~> 4.1)
+  puma (~> 4.3)
   rack-cors
   rails (~> 6.0.2, >= 6.0.2.1)
   rails-controller-testing
